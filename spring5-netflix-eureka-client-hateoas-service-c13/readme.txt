@@ -1,0 +1,3 @@
+该应用发布的是hateoas形式的自适应API，能够正常注册到注册机中
+但是在消费这个服务的时候发现不能正常使用restTemplate而是需要使用Traverson
+但是Traverson即用不了@LoadBalanced即用不了客户端负载均衡，所以暂时没有消费的办法，只能通过在Traverson实例中写死具体的某个服务实例url
